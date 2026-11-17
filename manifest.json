@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "EmotionMirror — Expression & Mood Dashboard",
+  "version": "1.0.0",
+  "description": "On-device facial expression and mood dashboard: 7 emotions, valence-arousal map, mood timeline and session reports. No video ever leaves your browser.",
+  "permissions": ["storage"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Open EmotionMirror" },
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  }
+}
